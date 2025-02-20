@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wandelingen in Andorra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wandelingen in Andorra</h1>
+        <p>Ontdek de mooiste routes in de Pyreneeën</p>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>Zoek een wandeling</h2>
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="piek">Piek</option>
+                <option value="bergkam">Bergkam</option>
+                <option value="refugi">Refugi</option>
+                <option value="meer">Meer</option>
+                <option value="uitkijkpunt">Uitkijkpunt</option>
+            </select>
+
+            <label for="moeilijkheid">Moeilijkheid:</label>
+            <select id="moeilijkheid">
+                <option value="makkelijk">Makkelijk</option>
+                <option value="gemiddeld">Gemiddeld</option>
+                <option value="moeilijk">Moeilijk</option>
+            </select>
+
+            <button onclick="zoekWandelingen()">Zoek</button>
+        </section>
+
+        <section id="resultaten">
+            <h2>Resultaten</h2>
+            <ul id="wandelingen-lijst"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Wandelingen in Andorra. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
